@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sigGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b152d"/>
+      <stop offset="50%" stop-color="#b82343"/>
+      <stop offset="100%" stop-color="#690e21"/>
+    </linearGradient>
+  </defs>
+  <!-- Stylized Elegant Cursive Signature "Christiana" -->
+  <text x="10" y="70" font-family="'Brush Script MT', 'Great Vibes', 'Allura', 'Dancing Script', cursive" font-size="62" font-style="italic" fill="url(#sigGrad)">
+    Christiana
+  </text>
+  <path d="M 15,82 C 60,80 160,88 280,75 C 295,73 270,90 250,92" fill="none" stroke="url(#sigGrad)" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

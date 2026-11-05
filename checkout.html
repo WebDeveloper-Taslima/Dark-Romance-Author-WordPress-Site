@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizare Comandă Securizată | Christiana Ciocan Shop</title>
+  <meta name="description" content="Checkout securizat WooCommerce pentru cărțile autoarei Christiana Ciocan. Plată cu cardul prin Stripe sau PayPal.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body style="background: #080609;">
+
+  <div class="top-bar">
+    <div class="top-bar-announce">
+      🔒 CHECKOUT SECURIZAT PRIN CRIPTARE SSL 256-BIT
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="assets/images/logo-mark.svg" alt="Emblema Christiana Ciocan">
+        <div class="brand-text">
+          <span class="brand-title">CHRISTIANA CIOCAN</span>
+          <span class="brand-tagline">Dark Romance Author</span>
+        </div>
+      </a>
+      <div class="header-actions">
+        <span style="font-size: 0.85rem; color: var(--gold-light);">Pasul 2 din 2: Plată &amp; Livrare</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding: 4rem 1.5rem;">
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <span style="font-size: 0.8rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold-primary);">WOOCOMMERCE DIRECT</span>
+      <h1 class="gold-gradient-text" style="font-size: 2.5rem; margin-top: 0.5rem;">FINALIZEAZĂ COMANDA</h1>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.35fr 1fr; gap: 3.5rem;">
+      
+      <!-- Left: Form -->
+      <div>
+        <div style="background: #120f16; border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 2rem; margin-bottom: 2rem;">
+          <h3 style="color: var(--gold-light); font-size: 1.15rem; margin-bottom: 1.25rem;">1. DATE DE CONTACT &amp; LIVRARE DIGITALĂ</h3>
+          <div style="margin-bottom: 1rem;">
+            <label style="display:block; font-size:0.8rem; text-transform:uppercase; color:var(--text-dim); margin-bottom:0.35rem;">Adresă de Email *</label>
+            <input type="email" value="cititor@darkromance.ro" style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.12); padding:0.75rem 1rem; color:#fff; border-radius:3px;">
+          </div>
+          <div style="font-size:0.8rem; color:var(--text-dim);">
+            E-book-urile (.epub, .pdf, .mobi) vor fi trimise instantaneu pe această adresă după confirmarea plății.
+          </div>
+        </div>
+
+        <div style="background: #120f16; border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; padding: 2rem; margin-bottom: 2rem;">
+          <h3 style="color: var(--gold-light); font-size: 1.15rem; margin-bottom: 1.25rem;">2. ADRESĂ DE EXPEDIERE (PENTRU CĂRȚI FIZICE)</h3>
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem; margin-bottom:1rem;">
+            <div>
+              <label style="display:block; font-size:0.8rem; text-transform:uppercase; color:var(--text-dim); margin-bottom:0.35rem;">Prenume *</label>
+              <input type="text" value="Elena" style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.12); padding:0.75rem 1rem; color:#fff; border-radius:3px;">
+            </div>
+            <div>
+              <label style="display:block; font-size:0.8rem; text-transform:uppercase; color:var(--text-dim); margin-bottom:0.35rem;">Nume *</label>
+              <input type="text" value="Popescu" style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.12); padding:0.75rem 1rem; color:#fff; border-radius:3px;">
+            </div>
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <label style="display:block; font-size:0.8rem; text-transform:uppercase; color:var(--text-dim); margin-bottom:0.35rem;">Stradă și Număr *</label>
+            <input type="text" value="Bulevardul Regina Elisabeta, Nr. 12" style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.12); padding:0.75rem 1rem; color:#fff; border-radius:3px;">
+          </div>
+
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem; margin-bottom:1rem;">
+            <div>
+              <label style="display:block; font-size:0.8rem; text-transform:uppercase; color:var(--text-dim); margin-bottom:0.35rem;">Oraș *</label>
+              <input type="text" value="București" style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.12); padding:0.75rem 1rem; color:#fff; border-radius:3px;">
+            </div>
+            <div>
+              <label style="display:block; font-size:0.8rem; text-transform:uppercase; color:var(--text-dim); margin-bottom:0.35rem;">Județ / Sector *</label>
+              <input type="text" value="Sector 1" style="width:100%; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.12); padding:0.75rem 1rem; color:#fff; border-radius:3px;">
+            </div>
+          </div>
+        </div>
+
+        <div style="background: #120f16; border: 1px solid var(--border-gold); border-radius: 4px; padding: 2rem;">
+          <h3 style="color: var(--gold-light); font-size: 1.15rem; margin-bottom: 1.25rem;">3. METODĂ DE PLATĂ (STRIPE CARD &amp; PAYPAL)</h3>
+          
+          <div style="border: 1px solid var(--gold-primary); background: rgba(212, 175, 55, 0.05); padding: 1.25rem; border-radius: 4px; margin-bottom: 1rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <label style="display: flex; gap: 0.5rem; align-items: center; color: #fff; font-weight: 600;">
+                <input type="radio" name="pay" checked> Card Bancar (Procesat prin Stripe)
+              </label>
+              <span style="font-size: 0.8rem; color: var(--gold-primary);">Visa • Mastercard</span>
+            </div>
+            <div>
+              <input type="text" value="4242 •••• •••• 4242" style="width: 100%; background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.15); padding: 0.75rem; color: #fff; margin-bottom: 0.5rem; border-radius: 3px;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                <input type="text" value="12/28" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.15); padding: 0.75rem; color: #fff; border-radius: 3px;">
+                <input type="text" value="888" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.15); padding: 0.75rem; color: #fff; border-radius: 3px;">
+              </div>
+            </div>
+          </div>
+
+          <div style="border: 1px solid rgba(255,255,255,0.1); padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem;">
+            <label style="display: flex; justify-content: space-between; align-items: center; color: #fff; cursor: pointer;">
+              <span style="display: flex; gap: 0.5rem; align-items: center;">
+                <input type="radio" name="pay"> PayPal
+              </span>
+              <strong style="color: #0079C1;">PayPal</strong>
+            </label>
+          </div>
+
+          <button type="button" class="btn btn-gold" style="width: 100%; padding: 1.15rem; font-size: 0.95rem;" onclick="alert('Comanda a fost înregistrată cu succes în WooCommerce! Ai primit emailul de confirmare.'); window.location.href='index.html';">
+            Plătește și Finalizează Comanda (54,00 Lei)
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Summary -->
+      <div>
+        <div style="background: #120f16; border: 1px solid var(--border-gold); border-radius: 4px; padding: 2rem; position: sticky; top: 100px;">
+          <h3 style="color: var(--gold-light); font-size: 1.2rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.75rem; margin-bottom: 1.25rem;">
+            SUMAR COMANDĂ
+          </h3>
+
+          <div style="display: flex; gap: 1rem; margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.08);">
+            <img src="assets/images/pacatul-casei-vartai-hero.jpg" style="width: 55px; height: 80px; object-fit: cover; border-radius: 2px;">
+            <div style="flex: 1;">
+              <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 0.2rem;">Păcatul Casei Vartai</h4>
+              <div style="font-size: 0.75rem; color: var(--gold-primary);">Ediție Sprayed Edges (x1)</div>
+              <div style="font-size: 0.9rem; font-weight: bold; color: #fff; margin-top: 0.25rem;">54,00 Lei</div>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+            <span>Subtotal:</span>
+            <span>54,00 Lei</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+            <span>Livrare prin Curier:</span>
+            <span style="color: #9be4b5;">Gratuită la Precomandă</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 1.35rem; font-family: var(--font-heading); color: var(--gold-light); border-top: 1px solid var(--border-gold); padding-top: 0.75rem; margin-top: 0.75rem; font-weight: 700;">
+            <span>Total:</span>
+            <span>54,00 Lei</span>
+          </div>
+
+          <!-- Coupon -->
+          <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
+            <label style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); display: block; margin-bottom: 0.4rem;">Ai un cod de reducere?</label>
+            <div style="display: flex; gap: 0.5rem;">
+              <input type="text" id="coupon_val" placeholder="CHRISTIANA10" style="flex:1; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.15); padding:0.5rem; color:#fff; font-size:0.85rem;">
+              <button type="button" class="btn btn-burgundy" style="padding:0.5rem 1rem; font-size:0.75rem;" onclick="document.getElementById('coupon_msg').innerText='✓ Cupon aplicat! 10% reducere acordată.';">Aplică</button>
+            </div>
+            <div id="coupon_msg" style="font-size:0.75rem; color:#9be4b5; margin-top:0.35rem;"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container" style="text-align: center; color: var(--text-dim); font-size: 0.85rem;">
+      <p>&copy; 2026 Christiana Ciocan. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

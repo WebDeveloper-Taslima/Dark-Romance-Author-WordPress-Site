@@ -1,0 +1,1142 @@
+/* ==========================================================================
+   CHRISTIANA CIOCAN - OFFICIAL AUTHOR PORTAL (5-STAR EDITION)
+   Theme: High-End Dark Romance & Gothic Editorial Luxury
+   Color Palettes: Midnight Black, Warm Parchment/Cream, Velvet Oxblood Burgundy & Liquid Gold
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Dark Luxe */
+  --bg-dark: #070608;
+  --bg-dark-surface: #0f0d12;
+  --bg-dark-card: #141117;
+  --bg-dark-hover: #1b1720;
+
+  /* Editorial Cream / Warm Parchment (From 4-star entry) */
+  --bg-cream: #f6f3eb;
+  --bg-cream-card: #ffffff;
+  --text-cream-heading: #1d1719;
+  --text-cream-body: #524749;
+
+  /* Royal Velvet Burgundy / Oxblood (Seria Imperiul Umbrelor) */
+  --bg-burgundy: #480c19;
+  --bg-burgundy-deep: #320710;
+  --bg-burgundy-card: #3d0a15;
+  --burgundy-glow: rgba(184, 35, 67, 0.4);
+
+  /* Gold Metallic Accents */
+  --gold-primary: #d4af37;
+  --gold-light: #faeac3;
+  --gold-dark: #91691a;
+  --gold-gradient: linear-gradient(135deg, #faeac3 0%, #d4af37 50%, #91691a 100%);
+  --gold-text-gradient: linear-gradient(180deg, #fff3d6 0%, #dfb548 50%, #9e7421 100%);
+
+  /* Crimson Accent */
+  --crimson-accent: #8b152d;
+  --crimson-light: #c22547;
+  --crimson-gradient: linear-gradient(135deg, #a61a3b 0%, #63091c 100%);
+
+  /* Borders & Text */
+  --border-gold: rgba(212, 175, 55, 0.3);
+  --border-gold-strong: rgba(212, 175, 55, 0.7);
+  --border-dark-subtle: rgba(255, 255, 255, 0.08);
+  --border-cream: rgba(184, 35, 67, 0.15);
+
+  --text-white: #ffffff;
+  --text-light: #ede8e1;
+  --text-muted: #a89f97;
+  --text-dim: #706862;
+
+  --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+  --font-heading: 'Cinzel', serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  --shadow-luxe: 0 15px 45px rgba(0, 0, 0, 0.85);
+  --shadow-burgundy: 0 12px 35px rgba(72, 12, 25, 0.5);
+  --shadow-gold: 0 10px 30px rgba(212, 175, 55, 0.25);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--bg-dark);
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-light);
+  background-color: var(--bg-dark);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+/* Typography Utility */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.gold-gradient-text {
+  background: var(--gold-text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+a {
+  color: var(--gold-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--gold-light);
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ==========================================================================
+   TOP BAR & NAVIGATION
+   ========================================================================== */
+.top-bar {
+  background: linear-gradient(90deg, #160408, #320710, #160408);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+  padding: 0.55rem 1.5rem;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--gold-light);
+  letter-spacing: 0.1em;
+}
+
+.top-bar-announce {
+  text-align: center;
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.top-bar-announce strong {
+  color: #fff;
+}
+
+.top-bar-lang {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.top-bar-lang span.active {
+  color: var(--gold-primary);
+  border-bottom: 1px solid var(--gold-primary);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(7, 6, 8, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-logo img {
+  height: 46px;
+  width: auto;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  background: var(--gold-text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.brand-tagline {
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.main-nav {
+  margin-left: auto;
+  margin-right: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.6rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  padding: 0.25rem 0;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1.5px;
+  background: var(--gold-primary);
+  transition: var(--transition);
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a.active {
+  color: var(--gold-light);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.cart-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-gold);
+  color: var(--gold-light);
+  padding: 0.5rem 0.95rem;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+
+.cart-btn:hover {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: var(--gold-primary);
+}
+
+.cart-badge {
+  background: var(--crimson-accent);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 10px;
+}
+
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--gold-light);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   EDGE-TO-EDGE VIDEO HERO (calypsobooks.ro mobile style)
+   ========================================================================== */
+.hero-video-section {
+  position: relative;
+  width: 100%;
+  background: #000;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-gold);
+}
+
+/* Full bleed on mobile! Edge-to-edge with no side border */
+@media (max-width: 768px) {
+  .hero-video-section {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    border-left: none !important;
+    border-right: none !important;
+    padding: 0 !important;
+  }
+}
+
+.hero-carousel-container {
+  position: relative;
+  width: 100%;
+  height: 82vh;
+  min-height: 560px;
+  max-height: 820px;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease, visibility 0.8s;
+  overflow: hidden;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.hero-bg-visual {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center right;
+  transform: scale(1.05);
+  transition: transform 8s ease-out;
+}
+
+.hero-slide.active .hero-bg-visual {
+  transform: scale(1);
+}
+
+.slide-vartai .hero-bg-visual {
+  background-image: 
+    radial-gradient(circle at 75% 50%, rgba(0, 0, 0, 0.1) 0%, rgba(7, 6, 8, 0.95) 75%),
+    linear-gradient(to right, rgba(7, 6, 8, 0.98) 35%, rgba(7, 6, 8, 0.5) 65%, transparent 100%),
+    url('../images/pacatul-casei-vartai-hero.jpg');
+}
+
+.slide-speranta .hero-bg-visual {
+  background-image: 
+    radial-gradient(circle at 75% 50%, rgba(139, 21, 45, 0.3) 0%, rgba(7, 6, 8, 0.95) 75%),
+    linear-gradient(to right, rgba(7, 6, 8, 0.98) 35%, rgba(7, 6, 8, 0.6) 65%, transparent 100%),
+    url('../images/speranta-are-numele-lui-cover.jpg');
+}
+
+.hero-content-wrap {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Floating Velvet Wine Book Showcase Card in Hero */
+.hero-book-card {
+  background: linear-gradient(135deg, rgba(72, 12, 25, 0.88) 0%, rgba(25, 4, 9, 0.94) 100%);
+  border: 1px solid var(--border-gold);
+  border-radius: 4px;
+  padding: 2.5rem;
+  max-width: 540px;
+  box-shadow: var(--shadow-burgundy), var(--shadow-luxe);
+  backdrop-filter: blur(8px);
+}
+
+.hero-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.hero-novel-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.hero-author-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--gold-primary);
+  margin-bottom: 1.25rem;
+}
+
+.hero-quote {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #f1ede6;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--gold-primary);
+}
+
+.hero-cta-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Carousel Control Arrows */
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(7, 6, 8, 0.7);
+  border: 1px solid var(--border-gold);
+  color: var(--gold-light);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: var(--transition);
+}
+
+.hero-arrow:hover {
+  background: var(--gold-primary);
+  color: #000;
+}
+
+.hero-arrow.prev { left: 1.5rem; }
+.hero-arrow.next { right: 1.5rem; }
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.btn-gold {
+  background: var(--gold-gradient);
+  color: #0d0a0f;
+  border: 1px solid var(--gold-light);
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #fff0d0 0%, #e2be52 50%, #9e7b23 100%);
+  color: #000;
+  transform: translateY(-2px);
+}
+
+.btn-ghost-gold {
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--gold-light);
+  border: 1px solid var(--border-gold);
+}
+
+.btn-ghost-gold:hover {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: var(--gold-light);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-burgundy {
+  background: var(--crimson-gradient);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: var(--shadow-burgundy);
+}
+
+.btn-burgundy:hover {
+  background: linear-gradient(135deg, #be1e43 0%, #750a21 100%);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-dark {
+  background: #110e13;
+  color: #fff;
+  border: 1px solid var(--border-gold);
+}
+
+.btn-dark:hover {
+  background: #1c1822;
+  color: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   SECTION 2: EDITORIAL PARCHMENT INTRO & AUTHOR BIO
+   ========================================================================== */
+.section-cream {
+  background-color: var(--bg-cream);
+  color: var(--text-cream-body);
+  padding: 6rem 0;
+  position: relative;
+}
+
+.quote-center-block {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 5rem auto;
+}
+
+.quote-center-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  line-height: 1.25;
+  color: var(--text-cream-heading);
+  margin-bottom: 0.5rem;
+}
+
+.quote-center-title span.italic-red {
+  display: block;
+  font-style: italic;
+  color: var(--crimson-accent);
+}
+
+.quote-center-sub {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #695e60;
+  margin-top: 1rem;
+}
+
+/* Author Spotlight Box in Cream Section */
+.author-spotlight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.author-photo-frame {
+  position: relative;
+}
+
+.author-photo-frame img {
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.author-bio-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-badge-top {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--crimson-accent);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.author-name-title {
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  color: var(--text-cream-heading);
+  margin-bottom: 1.25rem;
+}
+
+.author-paragraph {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-cream-body);
+  margin-bottom: 1rem;
+}
+
+.author-signature-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-cream);
+}
+
+.author-signature-row img {
+  height: 52px;
+  width: auto;
+}
+
+/* ==========================================================================
+   SECTION 3: SERIA IMPERIUL UMBRELOR (Velvet Burgundy Background)
+   ========================================================================== */
+.section-burgundy {
+  background: radial-gradient(circle at 50% 30%, #540d1e 0%, #300610 80%, #1e030a 100%);
+  color: #fff;
+  padding: 6.5rem 0;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.section-burgundy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 1.25rem;
+}
+
+.section-burgundy-title {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  letter-spacing: 0.08em;
+  color: #fff;
+}
+
+.section-burgundy-sub {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #f3d4dc;
+}
+
+.books-4-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.book-item-card {
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.book-cover-container {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+  margin-bottom: 1.25rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.book-item-card:hover .book-cover-container {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.9), 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.book-tag-small {
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 0.35rem;
+}
+
+.book-name-small {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.book-format-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.85rem;
+  color: #f7ced7;
+  margin-bottom: 1rem;
+}
+
+.book-price-highlight {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--gold-light);
+  font-weight: 700;
+}
+
+.book-item-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.book-item-actions .btn {
+  flex: 1;
+  padding: 0.65rem 0.5rem;
+  font-size: 0.72rem;
+}
+
+/* ==========================================================================
+   SECTION 4: GOODREADS TESTIMONIAL BANNER (Parchment Tone)
+   ========================================================================== */
+.section-testimonial-band {
+  background: #ede7dc;
+  color: #1e191b;
+  padding: 3.5rem 0;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-stars {
+  color: var(--crimson-accent);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.testimonial-quote {
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto 0.75rem auto;
+  line-height: 1.4;
+  color: #1c1517;
+}
+
+.testimonial-author {
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #6d6264;
+}
+
+/* ==========================================================================
+   SECTION 5: 3 UNIVERSE PORTALS (Burgundy, Black, Cream)
+   ========================================================================== */
+.section-portals {
+  padding: 5rem 0;
+  background: var(--bg-dark);
+}
+
+.portals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.portal-card {
+  padding: 3.5rem 2rem;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.portal-burgundy {
+  background: linear-gradient(135deg, #590f22 0%, #29040c 100%);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #fff;
+}
+
+.portal-black {
+  background: #0f0d12;
+  border: 1px solid var(--border-gold);
+  color: var(--gold-light);
+}
+
+.portal-cream {
+  background: #f7f4ee;
+  border: 1px solid rgba(184, 35, 67, 0.2);
+  color: #241b1d;
+}
+
+.portal-tag {
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  opacity: 0.8;
+}
+
+.portal-title {
+  font-size: 1.35rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.portal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-luxe);
+}
+
+.portal-burgundy:hover {
+  box-shadow: var(--shadow-burgundy);
+}
+
+/* ==========================================================================
+   SECTION 6: JURNALUL IMPERIULUI (Editorial Blog in Soft Ivory)
+   ========================================================================== */
+.section-journal {
+  background: #faf7f2;
+  color: var(--text-cream-body);
+  padding: 6rem 0;
+}
+
+.section-journal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 1.25rem;
+}
+
+.section-journal-title {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: var(--text-cream-heading);
+}
+
+.journal-3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.25rem;
+}
+
+.journal-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.journal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.journal-img-wrap {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.journal-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.journal-card:hover .journal-img-wrap img {
+  transform: scale(1.05);
+}
+
+.journal-body {
+  padding: 1.75rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.journal-category-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--crimson-accent);
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  margin-bottom: 0.85rem;
+  align-self: flex-start;
+}
+
+.journal-card-title {
+  font-size: 1.15rem;
+  color: var(--text-cream-heading);
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.journal-snippet {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-cream-body);
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.journal-read-link {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--crimson-accent);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   SECTION 7: NEWSLETTER / SINNERS CLUB
+   ========================================================================== */
+.section-vip-club {
+  background: radial-gradient(circle at center, #350711 0%, #0a0709 80%);
+  padding: 5.5rem 0;
+  text-align: center;
+  border-top: 1px solid var(--border-gold);
+}
+
+.vip-box {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   SECTION 8: FOOTER
+   ========================================================================== */
+.site-footer {
+  background: #040305;
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
+  padding: 4.5rem 0 2rem 0;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.footer-col h4 {
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 1.25rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.65rem;
+}
+
+.footer-col ul a {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.footer-col ul a:hover {
+  color: var(--gold-light);
+}
+
+.footer-bottom-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+/* Modal Reader */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(8px);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-box {
+  background: #110e14;
+  border: 1px solid var(--border-gold);
+  border-radius: 4px;
+  max-width: 680px;
+  width: 100%;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95);
+}
+
+.modal-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-body {
+  padding: 2.25rem;
+  overflow-y: auto;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #ede7de;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .main-nav {
+    margin-right: 1.5rem;
+  }
+  .main-nav .nav-links {
+    gap: 1.2rem;
+  }
+  .nav-links a {
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-nav {
+    display: none;
+  }
+  .mobile-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .books-4-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portals-grid,
+  .journal-3-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .author-spotlight-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .hero-book-card {
+    padding: 1.75rem;
+  }
+
+  .books-4-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

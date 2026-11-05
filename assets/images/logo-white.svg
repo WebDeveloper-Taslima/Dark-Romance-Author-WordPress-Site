@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <g transform="translate(500, 240)">
+    <!-- FOUNTAIN PEN NIB -->
+    <path d="M 0,-165 C 10,-140 28,-75 28,-40 C 28,-36 26,-32 20,-32 L -20,-32 C -26,-32 -28,-36 -28,-40 C -28,-75 -10,-140 0,-165 Z" 
+          fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linejoin="round"/>
+    <circle cx="0" cy="-90" r="5" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <line x1="0" y1="-160" x2="0" y2="-95" stroke="#FFFFFF" stroke-width="3"/>
+    <line x1="0" y1="-85" x2="0" y2="-32" stroke="#FFFFFF" stroke-width="2.5"/>
+    <line x1="-24" y1="-32" x2="24" y2="-32" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M -18,-32 L -18,45 C -18,52 -12,58 0,60 C 12,58 18,52 18,45 L 18,-32" 
+          fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <path d="M -8,60 L 0,110 L 8,60 Z" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round"/>
+    <line x1="0" y1="60" x2="0" y2="105" stroke="#FFFFFF" stroke-width="2.5"/>
+
+    <!-- ROSE (Left) -->
+    <g transform="translate(-130, -50)">
+      <path d="M 15,-20 C 25,-45 0,-65 -25,-60 C -50,-55 -65,-30 -55,-5 C -48,15 -25,25 0,22 C 20,20 35,5 30,-12 Z" 
+            fill="none" stroke="#FFFFFF" stroke-width="4"/>
+      <path d="M -22,-45 C -35,-30 -30,-10 -15,-5 C 5,0 15,-15 10,-30 C 5,-42 -10,-45 -22,-45 Z" 
+            fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+      <path d="M -18,-25 C -20,-15 -10,-8 -3,-12 C 5,-15 3,-25 -6,-28 C -12,-30 -16,-28 -18,-25 Z" 
+            fill="none" stroke="#FFFFFF" stroke-width="3"/>
+      <path d="M -8,-18 C -12,-16 -12,-12 -8,-10 C -4,-8 -2,-12 -4,-15 Z" 
+            fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+      <path d="M -15,22 C -22,48 -35,85 -48,125" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+      <path d="M -30,35 C -55,30 -75,45 -80,55 C -65,70 -45,60 -35,42" 
+            fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round"/>
+      <path d="M -35,42 L -68,52" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+      <path d="M -42,85 C -75,85 -95,105 -100,118 C -85,130 -60,122 -45,95" 
+            fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round"/>
+      <path d="M -45,95 L -85,112" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    </g>
+
+    <!-- DRAGON WING (Right) -->
+    <g transform="translate(60, -40)">
+      <path d="M 0,-50 C 25,-100 80,-105 110,-70 C 140,-35 155,20 162,95 C 152,80 135,70 120,78 C 115,50 100,20 75,5 C 68,25 50,45 35,42 C 25,10 10,-20 0,-50 Z" 
+            fill="none" stroke="#FFFFFF" stroke-width="4.2" stroke-linejoin="round"/>
+      <path d="M 30,-58 C 75,-30 110,15 120,78" fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+      <path d="M 15,-40 C 45,-15 65,15 75,5" fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+      <path d="M 162,95 C 150,65 130,68 120,78" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+      <path d="M 120,78 C 105,45 88,48 75,5" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+      <path d="M 75,5 C 60,30 45,32 35,42" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    </g>
+
+    <!-- MONOGRAM & DEVIL'S TAIL -->
+    <path d="M -22,-30 C -55,-25 -105,-10 -115,30 C -125,75 -75,130 10,135 C -40,118 -85,85 -80,45 C -75,15 -40,0 -15,-5" 
+          fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M -18,-15 C -45,-12 -80,5 -88,38 C -98,75 -55,115 15,118 C -25,105 -65,75 -60,45 C -55,20 -30,10 -10,6" 
+          fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+    <path d="M -5,12 C 35,10 75,30 85,65 C 95,105 55,145 -10,148 C 50,132 90,95 72,55 C 60,25 25,18 -2,18" 
+          fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 72,55 C 85,85 75,110 50,112 C 28,114 20,95 28,78 C 32,68 42,65 52,70" 
+          fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 52,70 L 40,65 L 48,78 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M -10,148 C -45,148 -90,125 -105,85 C -110,120 -60,165 0,165 C 60,165 110,120 105,85 C 90,125 45,148 10,148 Z" 
+          fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <text x="500" y="520" 
+        font-family="'Cinzel', 'Cinzel Decorative', 'Trajan Pro', 'Georgia', serif" 
+        font-size="44" 
+        font-weight="600" 
+        letter-spacing="12" 
+        text-anchor="middle" 
+        fill="#FFFFFF">CHRISTIANA CIOCAN</text>
+</svg>
